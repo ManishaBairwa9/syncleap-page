@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons@7.0.0/primeicons.min.css">
+    <link rel="shortcut icon" href="./images/syncleapsmall.png" type="image/x-icon">
+    <title>Syncleap</title>
+</head>
+<body class="text-white h-full w-full overflow-x-hidden">
+    <header class="backdrop-blur-lg flex justify-between items-center h-16 px-6 md:h-16 md:px-16 lg:h-20 lg:px-24 fixed top-0 w-full z-50">
+        <img id="logo" src="./images/syncleap.png" class="h-12 md:h-12 lg:h-12 overflow-hidden hidden md:block lg:block">
+        <img id="small-logo" src="./images/syncleapsmall.png" class="sm:block md:hidden lg:hidden h-8 md:h-10 lg:h-12">
+        <nav >
+            <ul class="backdrop-blur-lg sidebar p-8 fixed top-0 right-0 h-screen w-60 hidden gap-4 flex-col items-start justify-start z-10">
+                <li onclick=hideSidebar()><a><i class="pi pi-times"></i></a></li>
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000"><a>Home</a></li>
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000"><a>Product</a></li>
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000"><a>About</a></li>
+                
+             </ul>
+            <ul class="gap-4 items-center justify-end h-full list-none text-sm flex mr-18">
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000 hidden md:block lg:block"><a>Home</a></li>
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000 hidden md:block lg:block"><a>Product</a></li>
+                <li class="hover:tracking-widest hover:font-bold cursor-pointer transition-all duration-1000 hidden md:block lg:block"><a>About</a></li>
+                <li class="menu-button block md:hidden lg:hidden text-lg" onclick=showSidebar()><a><i class="pi pi-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="w-[80vw] h-[40vh] md:w-[80vw] md:h-[90vh] absolute top-0 right-0 bg-sync-gradient bg-no-repeat opacity-50 origin-center rotate-6"></div>
+
+    <div class="bg-custom-blue hero-section px-6 md:px-16 lg:px-24 pt-20 md:pt-24 lg:pt-32 pb-20 w-full h-full grid grid-rows-1 md:grid-cols-1 lg:grid-cols-2 gap-8 justify-center box-border z-10">
+        <div class="hero-text flex flex-col gap-10 px-3 md:py-10 py-5 pl-0  z-10">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-wrap">Launch a software businesses website today with us!</h1>
+            <p class="text-gray-300 text-sm md:text-base lg:text-lg text-wrap pr-0 md:pr-4 lg:pr-14">Launch a business today with our help and get it done with amazing launch features, websites and more with uifry. We help business like yours thrive every day and beyond.</p>
+            <div class="flex gap-4 flex-row items-center"><button class="bg-[#0BA514] hover:bg-[#1d7823] w-24 h-10 md:w-36 md:h-12 rounded-md">Contact</button><span class="border-[1px] border-white h-12 w-12 flex justify-center items-center rounded-md"><a href=""><i class="pi pi-angle-right"></i></a></span></div>
+        </div>
+        <div class="hero-img flex justify-end h-full box-border float-right px-0 md:px-3 md:pb-10 py-5 z-10"><img class="h-full" src="./images/hero-image (1).png" alt="a girl with laptop"></div>
+        
+    </div>
+
+
+    <div class="bg-bright-purple py-20 md:py-28 lg:py-32 flex justify-center items-center"><h1 class="text-2xl md:text-3xl lg:text-5xl font-bold w-2/4 text-wrap text-center">Time to <span class="text-cyan-500">relax</span> and <br>
+        let your website do the work</h1></div>
+
+
+    <div class="bg-custom-blue h-2/4 px-6 pb-12 md:pb-16 lg:pb-24 flex justify-center items-center flex-col gap-16">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-semibold text-wrap text-center pt-14 w-full">We help your business grow faster.</h1>
+        <div class="flex flex-row flex-wrap gap-8 justify-center">
+            <div class="bg-box-blue h-auto w-80 md:w-80  lg:w-96 rounded-md flex flex-col gap-8 py-8 px-4 md:py-12 md:px-6 lg:py-16 lg:px-8">
+                <img class="w-10" src="./images/trophy.png" alt="trophy">
+                <h3 class="font-semibold text-wrap text-2xl">Offending belonging</h3>
+                <p class="text-wrap text-sm text-gray-300">Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
+                <a href="#" class="no-underline hover:text-bright-green text-white">Read more...</a>
+            </div>
+            <div class="bg-box-blue h-auto w-80 md:w-80  lg:w-96 rounded-md flex flex-col gap-8 py-8 px-4 md:py-12 md:px-6 lg:py-16 lg:px-8">
+                <img class="w-10" src="./images/flower.png" alt="trophy">
+                <h3 class="font-semibold text-wrap text-2xl">Offending belonging</h3>
+                <p class="text-wrap text-sm text-gray-300">Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
+                <a href="#" class="no-underline hover:text-bright-green text-white">Read more...</a>
+            </div>
+            <div class="bg-box-blue h-auto w-80 md:w-80  lg:w-96 rounded-md flex flex-col gap-8 py-8 px-4 md:py-12 md:px-6 lg:py-16 lg:px-8">
+                <img class="w-10" src="./images/sun.png" alt="trophy">
+                <h3 class="font-semibold text-wrap text-2xl">Offending belonging</h3>
+                <p class="text-wrap text-sm text-gray-300">Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
+                <a href="#" class="no-underline hover:text-bright-green text-white">Read more...</a>
+            </div>
+        </div>
+        <div class="flex justify-center"><button class="bg-indigo-600 px-12 py-3 hover:bg-indigo-700 rounded-md cursor-pointer">More About Platform</button></div>
+
+        <div class="flex flex-row items-center justify-center px-10 py-6 mx-6 md:mx-4 lg:mx-0 gap-20 border-2 border-slate-500 flex-wrap">
+            <p class="w-42 font-semibold text-gray-300 text-center">Trusted by over 100+ businesses worldwide!</p>
+            <img class="w-10" src="./images/flower.png" alt="">
+            <img class="w-10" src="./images/sun.png" alt="">
+            <img class="w-10" src="./images/trophy.png" alt="">
+            <img class="w-16" src="./images/12thwonder.png" alt="">
+            <img class="w-10" src="./images/mortarboard.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="bg-bright-purple px-4 md:px-16 lg:px-24 py-6 md:py-12 lg:py-16 w-full grid grid-rows-1 md:grid-rows-1 lg:grid-cols-2 gap-8 justify-center items-center box-border h-full">
+        <div class="flex items-center justify-center h-full box-border"><img class="h-full" src="./images/women2.png" alt="women image"></div>
+        <div class="hero-text flex flex-col gap-6 px-10">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 w-5/6">Let your business thrive under our supervision</h1>
+            <input class="indent-4 py-3 rounded-md focus:border-slate-800 caret-violet-950 outline-none text-slate-900 font-medium " id="name" type="text" placeholder="Name">
+            <input class="indent-4 py-3 rounded-md caret-violet-950 outline-none text-slate-900 font-medium " type="email" placeholder="Email">
+            <textarea class="rounded-md px-4 py-2 placeholder:font-medium caret-violet-950 outline-none text-slate-900 font-medium " placeholder="Message"></textarea>
+            <button class="bg-[#0BA514] hover:bg-[#1d7823] h-12 rounded-md cursor-pointer mt-6">Send</button>
+        </div>
+       
+    </div>
+
+    <div class="bg-custom-blue grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-6 md:px-20 md:py-14 lg:px-36 lg:py-16 justify-center items-start">
+        <div class="flex flex-col gap-4 pb-6">
+            <h1 class="font-medium">The immortals</h1>
+            <p class="text-gray-300 text-sm text-wrap">Simple innate summer fat appear basket his desire joy.</p>
+            <div class="flex flex-row gap-4">
+                <a href=""><i class="pi pi-instagram"></i></a>
+                <a href=""><i class="pi pi-whatsapp"></i></a>
+                <a href=""><i class="pi pi-facebook"></i></a>
+                <a href=""><i class="pi pi-twitter"></i></a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-3 pb-6">
+            <h1 class="font-medium">Company</h1>
+            <a href="" class="text-gray-300 text-sm text-wrap">About us</a>
+            <a href="" class="text-gray-300 text-sm text-wrap">Career</a>
+            <a href="" class="text-gray-300 text-sm text-wrap">Pricing</a>
+            <a href="" class="text-gray-300 text-sm text-wrap">Blog</a>
+        </div>
+        <div class="flex flex-col gap-3 pb-6">
+            <h1 class="font-medium">Resources</h1>
+            <p class="text-gray-300 text-sm text-wrap">Templates</p>
+            <p class="text-gray-300 text-sm text-wrap">Tutorials</p>
+            <p class="text-gray-300 text-sm text-wrap">Free resources</p>
+            <p class="text-gray-300 text-sm text-wrap">contract templates</p>
+        </div>
+        <div class="flex flex-col gap-4 pb-6">
+            <h1 class="font-medium">Join Our Newsletter</h1>
+            <input type="text" placeholder="email" class="indent-2 py-1">
+            <p class="text-gray-600 text-sm text-wrap">* Will send you weekly updates for you better finance management</p>
+        </div>
+</div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
